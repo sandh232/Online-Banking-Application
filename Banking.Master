@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Banking.master.cs" Inherits="BANKINGPROJECT.Banking" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>SHERIDAN ONLINE BANKING SERVICES</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div>
+                <h1>SHERIDAN ONLINE BANKING SERVICES</h1>
+                <!-- add image for header if needed -->
+            </div>
+        </header>
+        <nav>
+            <a href="Main.aspx">MAIN</a>
+            <a href="Balance.aspx">ACCOUNT BALANCE</a>
+            <a href="ChequeBook.aspx">REQUEST CHEQUE</a>
+            <a href="UpdateInfo.aspx">UPDATE INFO</a>
+            <a href="PasswordChange.aspx">CHANGE PASSWORD</a>
+            <a href="CloseAccount.aspx">CLOSE ACCOUNT</a>
+        </nav>
+        <br />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <br />
+        <footer>
+            <div>
+                <marquee behavior="slide" direction="right">
+                        <asp:Label ID="Label1" runat="server" Text="Sheridan Online Banking"></asp:Label>
+                        <br />
+                        <asp:Label ID="Label2" runat="server" Text="For help Contact us"></asp:Label>
+                        <br />
+                        <asp:Label ID="Label3" runat="server" Text="By Email: help@sheridanbanking.ca"></asp:Label>
+                        <br />
+                        <asp:Label ID="Label4" runat="server" Text="By Phone: 9050437721"></asp:Label>
+              </marquee>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
